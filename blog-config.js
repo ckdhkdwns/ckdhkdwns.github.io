@@ -1,5 +1,5 @@
 module.exports = {
-  title: "ckdhkdwns",
+  title: "ckdhkdwns.github.io",
   description: "developer blog",
   author: "ckdhkdwns",
   siteUrl: "https://devhudi.github.io/gatsby-starter-hoodie/",
