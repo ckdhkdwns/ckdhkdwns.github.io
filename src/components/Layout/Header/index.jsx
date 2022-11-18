@@ -144,12 +144,12 @@ const Header = ({ toggleTheme }) => {
           <Link to="/">{title}</Link>
         </BlogTitle>
         <Menu>
-          <ToggleWrapper>
+          {/* <ToggleWrapper>
             <IconRail theme={theme.name}>
               <FaSun onClick={toggleTheme} />
               <FaMoon onClick={toggleTheme} />
             </IconRail>
-          </ToggleWrapper>
+          </ToggleWrapper> */}
           <Link to="/tags">
             <FaTags />
           </Link>

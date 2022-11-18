@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 
+import './style.css'
 import useOffsetTop from "hooks/useOffsetTop"
 
 import Toc from "./Toc"
@@ -31,7 +32,7 @@ const Body = ({ html }) => {
   return (
     <Wrapper>
       <Toc items={toc} articleOffset={offsetTop} />
-
+      
       <StyledMarkdown
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}

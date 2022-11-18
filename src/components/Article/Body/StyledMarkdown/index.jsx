@@ -126,11 +126,13 @@ const StyledMarkdown = styled.div`
   }
 
   pre[class*="language-"] {
-    background-color: #1e1e1e;
+    background-color: #f7f7f7;
+    border-radius: 5px;
   }
 
   & *:not(pre) > code.language-text {
     padding: 1.6px 4.8px;
+    
     font-size: 14.4px;
     background-color: ${props => props.theme.colors.inlineCodeBackground};
     font-weight: bold;

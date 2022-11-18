@@ -1,9 +1,10 @@
 import { createGlobalStyle } from "styled-components"
+import "fontsource-noto-sans-kr";
 import reset from "styled-reset"
 
 const GlobalStyles = createGlobalStyle`
   ${reset}
-
+  
   body {
     font-family: 'Noto Sans KR', sans-serif;
     word-spacing: 0.2rem;

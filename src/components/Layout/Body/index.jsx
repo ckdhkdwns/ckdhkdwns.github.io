@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const BodyWrapper = styled.div`
-  margin: 0 auto;
+  position: relative;
+  left: 23%;
   padding-top: 80px;
-  max-width: 680px;
+  max-width: 780px;
 `
 
 const Body = ({ children }) => {

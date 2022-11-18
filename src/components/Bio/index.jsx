@@ -33,7 +33,7 @@ const Profile = styled.div`
   width: 128px;
   height: 128px;
   border-radius: 999px;
-  background-image: url(${profileImageRoot}/profile.png);
+  background-image: url(./profile.png);
   background-size: cover;
   background-position: center;
 `
@@ -104,9 +104,9 @@ const Bio = () => {
           <Link link={facebook}>
             <FaFacebook />
           </Link>
-          <Link link={linkedIn}>
+          {/* <Link link={linkedIn}>
             <FaLinkedin />
-          </Link>
+          </Link> */}
           <Link link={email}>
             <FaEnvelope />
           </Link>
