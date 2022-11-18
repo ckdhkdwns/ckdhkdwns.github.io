@@ -17,7 +17,6 @@
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sharp": "^2.7.1",
     "gatsby-plugin-sitemap": "^2.6.0",
-    "gatsby-remark-highlight-code": "^3.2.0",
     "gatsby-remark-prismjs": "^3.8.0",
     "gatsby-remark-reading-time": "^1.1.0",
     "gatsby-remark-static-images": "^1.2.1",
