@@ -2,7 +2,7 @@
   "name": "gatsby-starter-hoodie",
   "private": false,
   "description": "gatsby-starter-hoodie is a gatsby theme developed for developers to write tech blogs.",
-  "homepage": "https://devhudi.github.io/gatsby-starter-hoodie/",
+  "homepage": "https://ckdhkdwns.github.io/",
   "version": "0.2.0",
   "author": "Hudi",
   "dependencies": {
@@ -70,7 +70,8 @@
     "check:lint": "eslint . --ext .js,.jsx",
     "fix:lint": "eslint . --fix --ext .js,.jsx",
     "check:prettier": "prettier -c .",
-    "fix:prettier": "prettier -c --write ."
+    "fix:prettier": "prettier -c --write .",
+    "deploy": "gatsby build && gh-pages -d public -b main"
   },
   "repository": {
     "type": "git",
