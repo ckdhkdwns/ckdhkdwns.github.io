@@ -19,7 +19,7 @@ W: Some index files failed to download. They have been ignored, or old ones used
 ## 해결
 공개키를 등록한다.
 ```bash
-$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys {공캐 키}
+$ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys {공캐 키}adsf
 $ sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 536F8F1DE80F6A35
 ```
 
