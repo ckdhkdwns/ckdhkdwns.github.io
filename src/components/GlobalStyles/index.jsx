@@ -8,7 +8,7 @@ const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Noto Sans KR', sans-serif;
     word-spacing: 0.2rem;
-    font-weight: 300;
+    font-weight: 400;
 
     background: ${props => props.theme.colors.bodyBackground};
   }

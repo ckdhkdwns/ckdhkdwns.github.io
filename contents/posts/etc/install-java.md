@@ -9,7 +9,7 @@ Spring 공부 도중 VScode extension 호환성 문제로 Java 17을 설치해�
 - OS: Ubuntu 18.04  
 - Installed Java version: 11
 
-![error-extension](https://user-images.githubusercontent.com/66898263/189289285-640086de-65c5-4c9a-ada6-3f2599c9bf94.png){: .center}
+![error-extension](https://user-images.githubusercontent.com/66898263/189289285-640086de-65c5-4c9a-ada6-3f2599c9bf94.png)
 
 ## 1. 기존에 있던 Java 제거
 설치되어 있는 모든 openjdk를 삭제한다.

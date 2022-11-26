@@ -10,8 +10,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
-    
-    
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-plugin-react-redux`,
       options: {
@@ -38,7 +37,7 @@ module.exports = {
     },
     
     "gatsby-remark-reading-time",
-    
+    `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -99,6 +98,13 @@ module.exports = {
               },
               escapeEntities: {},
             },
+          },
+          {
+            resolve: `gatsby-remark-katex`,
+            options: {
+              // Add any KaTeX options from https://github.com/KaTeX/KaTeX/blob/master/docs/options.md here
+              strict: `ignore`
+            }
           },
           {
             resolve: "gatsby-remark-static-images",
@@ -163,4 +169,5 @@ module.exports = {
       },
     },
   ],
+
 }

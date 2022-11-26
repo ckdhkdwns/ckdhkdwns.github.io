@@ -126,7 +126,6 @@ const StyledMarkdown = styled.div`
   }
 
   pre[class*="language-"] {
-    background-color: #f7f7f7;
     border-radius: 5px;
   }
 

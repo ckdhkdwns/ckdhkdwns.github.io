@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://ckdhkdwns.github.io/sitemap.xml
