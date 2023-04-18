@@ -17,10 +17,18 @@ const PostListWrapper = styled.div`
 const PostWrapper = styled.div`
   position: relative;
   top: 0;
-  transition: all 0.5s;
+  transition: all 0.2s;
 
+  cursor: pointer;
+  padding: 30px 30px 5px 30px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background: #f6f6f6;
   @media (max-width: 768px) {
     padding: 0 5px;
+  }
+  &:hover {
+    background: #dde3e9a3;
   }
 `
 
@@ -38,6 +46,9 @@ const Excerpt = styled.p`
   word-break: break-all;
 `
 
+const PostDivider = styled.div`
+  margin: 20px;
+`
 const checkIsScrollAtBottom = () => {
   return (
     document.documentElement.scrollHeight -
@@ -76,17 +87,17 @@ const PostList = ({ postList }) => {
 
         return (
           <>
-            <PostWrapper>
-              <Title size="bg">
-                <Link to={slug}>{title}</Link>
-              </Title>
+            <PostWrapper onClick={() => {
+              window.location = slug
+            }}>
+              <Title size="bg">{title}</Title>
               <Date>{date}</Date>
               <Excerpt>{excerpt}</Excerpt>
               <TagList tagList={tags} />
             </PostWrapper>
 
             {postCount - 1 !== i && postList.length - 1 !== i && (
-              <Divider mt="48px" mb="32px" />
+              <PostDivider mt="48px" mb="32px" />
             )}
           </>
         )

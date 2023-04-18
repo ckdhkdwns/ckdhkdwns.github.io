@@ -101,9 +101,9 @@ const Bio = () => {
           <Link link={instagram}>
             <FaInstagram />
           </Link>
-          <Link link={facebook}>
+          {/* <Link link={facebook}>
             <FaFacebook />
-          </Link>
+          </Link> */}
           {/* <Link link={linkedIn}>
             <FaLinkedin />
           </Link> */}

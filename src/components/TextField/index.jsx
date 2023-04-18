@@ -21,7 +21,7 @@ const Input = styled.input.attrs({ type: "text" })`
   padding: 14px 19.2px 12px 50px;
   width: 100%;
   border: 1px solid ${props => props.theme.colors.textFieldBorder};
-  border-radius: 1vh;
+  border-radius: 10px;
   background-color: transparent;
   font-size: 16px;
   color: ${props => props.theme.colors.text};

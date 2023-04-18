@@ -3,9 +3,9 @@ import styled from "styled-components"
 
 const BodyWrapper = styled.div`
   position: relative;
-  left: 23%;
+  left: 18%;
   padding-top: 80px;
-  max-width: 780px;
+  max-width: 900px;
 `
 
 const Body = ({ children }) => {
