@@ -6,7 +6,7 @@ import { Link } from "gatsby"
 import { AiOutlineArrowLeft } from "react-icons/ai"
 
 const SeriesWrapper = styled.div`
-  margin-bottom: 32px;
+  margin: 16px 16px 32px 16px;
   padding: 16px;
   background-color: ${props => props.theme.colors.seriesBackground};
 `

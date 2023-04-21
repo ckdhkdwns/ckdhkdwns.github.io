@@ -12,6 +12,14 @@ module.exports = {
   plugins: [
     `gatsby-plugin-styled-components`,
     {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://ckdhkdwns.github.io/',
+        sitemap: 'https://ckdhkdwns.github.io/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
+    {
       resolve: `gatsby-plugin-react-redux`,
       options: {
         pathToCreateStoreModule: "./src/reducers/createStore",

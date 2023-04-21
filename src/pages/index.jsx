@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from "react"
+import React, { useState, useCallback, useEffect } from "react"
 import _ from "lodash"
 import styled from "styled-components"
 import { graphql } from "gatsby"
@@ -32,6 +32,9 @@ const BlogIndex = ({ data }) => {
 
   const [query, setQuery] = useState("")
 
+  useEffect(() => {
+    console.log(data);
+  }, [])
   const filteredPosts = useCallback(
     posts.filter(post => {
       const { frontmatter, rawMarkdownBody } = post
@@ -69,7 +72,7 @@ const BlogIndex = ({ data }) => {
         />
       </SearchWrapper>
       <VerticalSpace size={20} />
-      <SideTagList tags={tags} postCount={posts.length} />
+      {/* <SideTagList tags={tags} postCount={posts.length} /> */}
       <PostList postList={filteredPosts} />
     </Layout>
   )

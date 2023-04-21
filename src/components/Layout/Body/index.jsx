@@ -3,7 +3,7 @@ import styled from "styled-components"
 
 const BodyWrapper = styled.div`
   position: relative;
-  left: 18%;
+  margin: 0 auto;
   padding-top: 80px;
   max-width: 900px;
 `

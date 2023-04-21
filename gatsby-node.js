@@ -21,6 +21,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           frontmatter {
             series
           }
+          
         }
       }
       tagsGroup: allMarkdownRemark(limit: 2000) {

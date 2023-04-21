@@ -10,7 +10,7 @@ import TagList from "components/TagList"
 
 const PostListWrapper = styled.div`
   @media (max-width: 768px) {
-    padding: 0 10px;
+    padding: 0 15px;
   }
 `
 
@@ -20,15 +20,14 @@ const PostWrapper = styled.div`
   transition: all 0.2s;
 
   cursor: pointer;
-  padding: 30px 30px 5px 30px;
+  padding: 10px 10px 5px 10px;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  background: #f6f6f6;
+  
   @media (max-width: 768px) {
-    padding: 0 5px;
+    
   }
   &:hover {
-    background: #dde3e9a3;
+    
   }
 `
 
@@ -44,10 +43,16 @@ const Excerpt = styled.p`
   font-size: 16px;
   color: ${props => props.theme.colors.secondaryText};
   word-break: break-all;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; 
+          line-clamp: 3; 
+  -webkit-box-orient: vertical;
 `
 
 const PostDivider = styled.div`
   margin: 20px;
+  border-bottom: 1px solid #e5e5e5;
 `
 const checkIsScrollAtBottom = () => {
   return (
@@ -82,9 +87,11 @@ const PostList = ({ postList }) => {
     <PostListWrapper>
       {postList.slice(0, postCount).map((post, i) => {
         const { title, date, tags } = post.frontmatter
+        
         const { excerpt } = post
         const { slug } = post.fields
 
+        
         return (
           <>
             <PostWrapper onClick={() => {
