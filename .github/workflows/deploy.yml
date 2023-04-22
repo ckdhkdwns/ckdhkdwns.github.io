@@ -1,7 +1,8 @@
+name: Deploy
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   deploy:
@@ -29,7 +30,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: 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
-          publish_dir: ./public
-
-
-          
+          publish_dir: ./public         
