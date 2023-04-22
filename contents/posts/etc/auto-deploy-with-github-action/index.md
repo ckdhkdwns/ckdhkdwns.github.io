@@ -83,4 +83,6 @@ jobs:
 
 <div></div> 
 
-3. `master` 브랜치에 push한다.
+3. `master` 브랜치에 push합니다. 이후 해당 저장소의 `action` 탭을 확인해보면 정상적으로 배포가 된 것을 확인할 수 있습니다.
+
+![action-result1](./action-result1.png)
