@@ -1,7 +1,8 @@
 name: Auto Deploy
+
 on:
 	push:
-    branches: 
+    branches:
       - master
 
 jobs:
