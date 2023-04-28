@@ -21,7 +21,7 @@ const StyledMarkdown = styled.div`
   & img,
   & .katex-display {
     margin-top: 0;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   & p {
@@ -43,7 +43,7 @@ const StyledMarkdown = styled.div`
   }
 
   & h2 {
-    margin-top: 64px;
+    margin-top: 42px;
     margin-bottom: 24px;
     font-size: 28px;
   }
@@ -216,12 +216,14 @@ const StyledMarkdown = styled.div`
 
   & a {
     padding: 1.6px 0;
-    color: ${props => props.theme.colors.text};
+    color: #428bca;
+    text-decoration: none;
   }
 
   & a:hover {
-    background-color: ${props => props.theme.colors.text};
-    color: ${props => props.theme.colors.hoveredLinkText};
+    // background-color: ${props => props.theme.colors.text};
+    color: #2a6496;
+    text-decoration: underline;
   }
 `
 
