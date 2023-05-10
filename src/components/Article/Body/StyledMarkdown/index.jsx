@@ -92,16 +92,17 @@ const StyledMarkdown = styled.div`
 
   & table {
     border-collapse: collapse;
+    margin: 0 auto 20px;
+    border: 1px solid ${props => props.theme.colors.border};
   }
 
   & th {
-    border-bottom: 2px solid ${props => props.theme.colors.border};
+    border: 1px solid ${props => props.theme.colors.border};
     font-weight: 700;
   }
 
   & td {
-    border-top: 1px solid ${props => props.theme.colors.border};
-    border-bottom: 1px solid ${props => props.theme.colors.border};
+    border: 1px solid ${props => props.theme.colors.border};
   }
 
   & td,

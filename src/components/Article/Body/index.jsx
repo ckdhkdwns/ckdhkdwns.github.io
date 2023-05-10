@@ -6,7 +6,7 @@ import useOffsetTop from "hooks/useOffsetTop"
 
 import Toc from "./Toc"
 import StyledMarkdown from "./StyledMarkdown"
-
+import BaekjoonLink from "./BaekjoonLink/baekjoonLink"
 
 const Wrapper = styled.div`
   position: relative;
@@ -17,12 +17,14 @@ const Wrapper = styled.div`
   }
 `
 
-const Body = ({ html }) => {
+const Body = ({ title, html, series }) => {
   const [toc, setToc] = useState([])
 
   const [ref, offsetTop] = useOffsetTop()
 
   useEffect(() => {
+    console.log(series)
+
     setToc(
       Array.from(
         document.querySelectorAll("#article-body > h2, #article-body > h3")
@@ -33,7 +35,9 @@ const Body = ({ html }) => {
   return (
     <Wrapper>
       <Toc items={toc} articleOffset={offsetTop} />
-      
+      {series == "Baekjoon"? <BaekjoonLink title={title}/> : <></>
+
+      }
       <StyledMarkdown
         id="article-body"
         dangerouslySetInnerHTML={{ __html: html }}

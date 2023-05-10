@@ -8,6 +8,7 @@ import { AiOutlineArrowLeft } from "react-icons/ai"
 const SeriesWrapper = styled.div`
   margin: 16px 16px 32px 16px;
   padding: 16px;
+  border-radius: 5px;
   background-color: ${props => props.theme.colors.seriesBackground};
 `
 
